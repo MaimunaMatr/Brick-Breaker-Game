@@ -41,7 +41,7 @@ timer.start();
     @Override
     public void paint(Graphics g){
     // background color
-    g.setColor(Color.WHITE);
+    g.setColor(Color.PINK);
     g.fillRect(1, 1, 692, 592);
     //drawing map 
     map.draw((Graphics2D)g);
@@ -51,9 +51,9 @@ timer.start();
      g.fillRect(0,0, 692, 3);
       g.fillRect(691,0, 3, 592);
       // scores 
-      g.setColor(Color.WHITE);
+      g.setColor(Color.BLACK);
       g.setFont(new Font("serif", Font.BOLD,25));
-      g.drawString(""+score, 590,30);
+      g.drawString("score:"+score, 590,30);
       
       //the paddle
       g.setColor(Color.BLACK);
@@ -69,7 +69,7 @@ timer.start();
     	  ballYdir = 0;
     	  g.setColor(Color.RED);
     	  g.setFont(new Font("serfi", Font.BOLD, 30));
-    	  g.drawString("You Win: ",260,300);
+    	  g.drawString("   You Win! YAY",260,300);
     	  
     	  g.setFont(new Font("serfi", Font.BOLD, 20));
     	  g.drawString("Press Enter to Restrat",260,350);
@@ -82,7 +82,7 @@ timer.start();
     	  ballYdir = 0;
     	  g.setColor(Color.RED);
     	  g.setFont(new Font("serif", Font.BOLD,30));
-    	  g.drawString("Game Over, Scores: ",190,300);
+    	  g.drawString("   Game Over!!",190,300);
     	  
     	  g.setFont(new Font("serif", Font.BOLD,20));
     	  g.drawString("Press Enter to Restrat",230,350);
