@@ -41,7 +41,7 @@ timer.start();
     @Override
     public void paint(Graphics g){
     // background color
-    g.setColor(Color.WHITE);
+    g.setColor(Color.PINK);
     g.fillRect(1, 1, 692, 592);
     //drawing map 
     map.draw((Graphics2D)g);
@@ -51,9 +51,9 @@ timer.start();
      g.fillRect(0,0, 692, 3);
       g.fillRect(691,0, 3, 592);
       // scores 
-      g.setColor(Color.WHITE);
+      g.setColor(Color.BLACK);
       g.setFont(new Font("serif", Font.BOLD,25));
-      g.drawString(""+score, 590,30);
+      g.drawString("score:"+score, 590,30);
       
       //the paddle
       g.setColor(Color.BLACK);
